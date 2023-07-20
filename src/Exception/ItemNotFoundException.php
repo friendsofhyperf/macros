@@ -8,12 +8,10 @@ declare(strict_types=1);
  * @document https://github.com/friendsofhyperf/components/blob/main/README.md
  * @contact  huangdijia@gmail.com
  */
-namespace FriendsOfHyperf\Macros\Contract;
+namespace FriendsOfHyperf\Macros\Exception;
 
-interface Htmlable
+use RuntimeException;
+
+class ItemNotFoundException extends RuntimeException
 {
-    /**
-     * Get content as a string of HTML.
-     */
-    public function toHtml(): string;
 }
